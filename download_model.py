@@ -88,6 +88,22 @@ def download_model(model_name=None, destination=None):
     if valid_model(folder, info["files"]):
         print(f"Checkpoint ready: {folder}")
         return folder
+    if folder.exists() and (not folder.is_dir() or any(folder.iterdir())):
+        raise FileExistsError(
+            f"{folder} contains a different or incomplete checkpoint. "
+            "It was not overwritten. Choose another --destination."
+        )
+    folder.parent.mkdir(parents=True, exist_ok=True)
+    required_space = (
+        info["size_bytes"]
+        + sum(file["size_bytes"] for file in info["files"].values())
+        + 32 * 1024 * 1024
+    )
+    if shutil.disk_usage(folder.parent).free < required_space:
+        raise OSError(
+            f"Downloading and extracting this model needs about "
+            f"{required_space / 1024**2:.0f} MiB of free space."
+        )
 
     token = github_token()
     opener = urllib.request.build_opener(SafeRedirect())
