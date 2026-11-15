@@ -1,0 +1,142 @@
+{
+  "repository": "mNwoK/rut5-slang-transfer",
+  "release_tag": "v1.0.0",
+  "default_model": "rut5_v3_synthetic25_w4_best",
+  "models": {
+    "rut5_best": {
+      "asset": "rut5_best.zip",
+      "sha256": "f6bdf2b652669457d13c2b40c5160a43c92611a2c9466864ca607cf9d9cd4cc1",
+      "size_bytes": 239330811,
+      "files": {
+        "config.json": {
+          "sha256": "1da46eb71d38ebcdb4525bd6d9fb04a63d6e9e759bc1821613f87dd75527d93d",
+          "size_bytes": 835
+        },
+        "generation_config.json": {
+          "sha256": "db062fc76dbc613b2c306e63c336ea8ae632bd3fe4ddba95efa68290df228e74",
+          "size_bytes": 171
+        },
+        "model.safetensors": {
+          "sha256": "79cf603c19041cf3d1f78db099c04b2912965bb337d5e4e466a2a74231d6e8ec",
+          "size_bytes": 258600360
+        },
+        "tokenizer.json": {
+          "sha256": "5bb1a38eb079ce73995f4ebd9587dbe8c5ef66bc8b49cf257968b6812daa4286",
+          "size_bytes": 1653726
+        },
+        "tokenizer_config.json": {
+          "sha256": "f3d93d1363caf4c3de1dbb16367a9796905408baad7b0bf0fb0f41dc95b3ba40",
+          "size_bytes": 2513
+        }
+      }
+    },
+    "rut5_v2_best": {
+      "asset": "rut5_v2_best.zip",
+      "sha256": "c6c00a623b1643ad6f20fd2ea30541696788d40b69eafb36e2b5cc464ca79bbd",
+      "size_bytes": 238958459,
+      "files": {
+        "config.json": {
+          "sha256": "1da46eb71d38ebcdb4525bd6d9fb04a63d6e9e759bc1821613f87dd75527d93d",
+          "size_bytes": 835
+        },
+        "generation_config.json": {
+          "sha256": "db062fc76dbc613b2c306e63c336ea8ae632bd3fe4ddba95efa68290df228e74",
+          "size_bytes": 171
+        },
+        "model.safetensors": {
+          "sha256": "783da8ae11e95d1285c70b87354b7182c902e13088096741e2859039b47e54de",
+          "size_bytes": 258600360
+        },
+        "tokenizer.json": {
+          "sha256": "5bb1a38eb079ce73995f4ebd9587dbe8c5ef66bc8b49cf257968b6812daa4286",
+          "size_bytes": 1653726
+        },
+        "tokenizer_config.json": {
+          "sha256": "535777f549be3f25f50d1b46b515e06f34268b8357c4e67035004268448ed285",
+          "size_bytes": 2512
+        }
+      }
+    },
+    "rut5_v3_best": {
+      "asset": "rut5_v3_best.zip",
+      "sha256": "fcfc3565d79fd0c77734c86bc302f65868b42b6091a02105c820ce247c3356d3",
+      "size_bytes": 239225786,
+      "files": {
+        "config.json": {
+          "sha256": "1da46eb71d38ebcdb4525bd6d9fb04a63d6e9e759bc1821613f87dd75527d93d",
+          "size_bytes": 835
+        },
+        "generation_config.json": {
+          "sha256": "db062fc76dbc613b2c306e63c336ea8ae632bd3fe4ddba95efa68290df228e74",
+          "size_bytes": 171
+        },
+        "model.safetensors": {
+          "sha256": "f20765460da1f0768bc2fa5f69eaac90f5da4ab35642ddaa59c3015efa5e258d",
+          "size_bytes": 258600360
+        },
+        "tokenizer.json": {
+          "sha256": "5bb1a38eb079ce73995f4ebd9587dbe8c5ef66bc8b49cf257968b6812daa4286",
+          "size_bytes": 1653726
+        },
+        "tokenizer_config.json": {
+          "sha256": "535777f549be3f25f50d1b46b515e06f34268b8357c4e67035004268448ed285",
+          "size_bytes": 2512
+        }
+      }
+    },
+    "rut5_v3_synthetic25_w4_best": {
+      "asset": "rut5_v3_synthetic25_w4_best.zip",
+      "sha256": "019dcfb03b05a4ad4005643c0923a9d4f2a909aa0275108ee49b39050c00e03f",
+      "size_bytes": 239196661,
+      "files": {
+        "config.json": {
+          "sha256": "1da46eb71d38ebcdb4525bd6d9fb04a63d6e9e759bc1821613f87dd75527d93d",
+          "size_bytes": 835
+        },
+        "generation_config.json": {
+          "sha256": "db062fc76dbc613b2c306e63c336ea8ae632bd3fe4ddba95efa68290df228e74",
+          "size_bytes": 171
+        },
+        "model.safetensors": {
+          "sha256": "9dfa26a1df261ec8ff6920c1f8685965619a13255f40bde4f5a85fad816818d1",
+          "size_bytes": 258600360
+        },
+        "tokenizer.json": {
+          "sha256": "5bb1a38eb079ce73995f4ebd9587dbe8c5ef66bc8b49cf257968b6812daa4286",
+          "size_bytes": 1653726
+        },
+        "tokenizer_config.json": {
+          "sha256": "535777f549be3f25f50d1b46b515e06f34268b8357c4e67035004268448ed285",
+          "size_bytes": 2512
+        }
+      }
+    },
+    "rut5_v3_weighted_best": {
+      "asset": "rut5_v3_weighted_best.zip",
+      "sha256": "a5906b1cb6803668171c9e72f3de1b5279a677366094c01ef25158d49dffcc3d",
+      "size_bytes": 239195243,
+      "files": {
+        "config.json": {
+          "sha256": "1da46eb71d38ebcdb4525bd6d9fb04a63d6e9e759bc1821613f87dd75527d93d",
+          "size_bytes": 835
+        },
+        "generation_config.json": {
+          "sha256": "db062fc76dbc613b2c306e63c336ea8ae632bd3fe4ddba95efa68290df228e74",
+          "size_bytes": 171
+        },
+        "model.safetensors": {
+          "sha256": "0c707570689ac42d04e5d109a80f631073904ce04d4215da276e157e0f032b99",
+          "size_bytes": 258600360
+        },
+        "tokenizer.json": {
+          "sha256": "5bb1a38eb079ce73995f4ebd9587dbe8c5ef66bc8b49cf257968b6812daa4286",
+          "size_bytes": 1653726
+        },
+        "tokenizer_config.json": {
+          "sha256": "535777f549be3f25f50d1b46b515e06f34268b8357c4e67035004268448ed285",
+          "size_bytes": 2512
+        }
+      }
+    }
+  }
+}
