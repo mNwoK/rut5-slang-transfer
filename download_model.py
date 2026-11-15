@@ -19,6 +19,8 @@ ROOT = Path(__file__).resolve().parent
 
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, request, fp, code, message, headers, new_url):
+        if urllib.parse.urlparse(new_url).scheme != "https":
+            raise ValueError("Checkpoint downloads require HTTPS")
         redirected = super().redirect_request(
             request, fp, code, message, headers, new_url
         )
@@ -80,6 +82,8 @@ def download_model(model_name=None, destination=None):
     if model_name not in manifest["models"]:
         raise ValueError(f"Unknown model: {model_name}")
     info = manifest["models"][model_name]
+    if any(Path(name).name != name for name in info["files"]):
+        raise ValueError("Invalid checkpoint filename")
     folder = Path(destination).resolve() if destination else ROOT / model_name
     if valid_model(folder, info["files"]):
         print(f"Checkpoint ready: {folder}")
